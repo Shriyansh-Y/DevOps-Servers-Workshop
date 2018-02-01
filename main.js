@@ -72,7 +72,7 @@ var client =
 client.listRegions(function(error, response)
 {
 	var data = response.body;
-	//console.log( JSON.stringify(response.body) );
+	console.log( JSON.stringify(response.body) );
 
 	if( response.headers )
 	{
@@ -84,7 +84,7 @@ client.listRegions(function(error, response)
 		for(var i=0; i<data.regions.length; i++)
 		{
 			var dc = data.regions[i];
-			//console.log(dc['slug']);
+			console.log(dc['slug']);
 		}
 	}
 });
@@ -112,7 +112,7 @@ client.listImages(function(error, response)
 		for(var i=0; i<data.images.length; i++)
 		{
 			var dc = data.images[i];
-			//console.log(dc['name']);
+			console.log(dc['name']);
 		}
 	}
 });
